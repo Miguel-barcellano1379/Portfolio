@@ -1,0 +1,227 @@
+/* ═══════════════════════════════════════════
+   GLOBAL
+═══════════════════════════════════════════ */
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(72, 68, 109);
+  font-size: 60px;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, 2px 2px 12px rgba(0, 0, 0, .6);
+}
+
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+.hero {
+  padding: 120px 20px;
+  background-image: url('https://img.magnific.com/free-vector/pixel-art-mystical-background_52683-87349.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 2px 2px 10px black;
+}
+
+.p1 {
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 16px;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.36);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 12px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* ═══════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════ */
+.page-menu {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 20px;
+  padding: 14px 0;
+  margin-top: 0;
+  background: rgba(17, 17, 17, .88);
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.page-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 999px;
+  transition: background .2s, transform .2s;
+}
+
+.page-menu a:hover {
+  background: rgba(255, 255, 255, .12);
+  transform: translateY(-1px);
+}
+
+section#about-text {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px;
+  border-radius: 12px;
+  background: #0849d3;
+  text-align: left;
+  flex: 2;
+  min-width:1000px;  /* increase this number to make it wider */
+}
+
+section#about-text h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about-box {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 10px;
+}
+
+section#experience-text {
+  width: min(1000px, 100%);
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #0849d3;
+}
+
+section#experience-text h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.experience-box {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 10px;
+}
+
+section#my-interests-text {
+  width: min(1000px, 100%);
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #0849d3;
+}
+
+section#my-interests-text h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.my-interests-box {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 10px;
+}
+
+section#systems-text {
+  width: min(1000px, 100%);
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #0849d3;
+}
+
+section#systems-text h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.systems-box {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 80px;  /* change this number — bigger = more space */
+  text-align: left;
+}
+
+.about-content {
+  flex: 1;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.about-image {
+  flex: 0 0 350px;  /* increase this to make image wider */
+  height: 300px;    /* increase this to make image taller */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .6);
+  border: 2px solid rgba(255, 255, 255, .08);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .about-row {
+    flex-direction: column;
+  }
+}
+
+.about-skills-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 60%;
+  height: 100%;
+  margin: 40px auto 20px auto;  /* increase 40px to add more top space */
+}
+
+
+
+#skills-text {
+  background: #0849d3;
+  padding: 30px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  flex: 0 0 400px;  /* increase this number to make it wider */
+
+}
+
+#skills-text h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.skills-box {
+  text-align: left;
+  line-height: 2;
+  font-size: 18px;
+  padding: 10px;
+}
